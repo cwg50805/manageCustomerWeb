@@ -1,7 +1,7 @@
 import { fetchUtils } from 'react-admin';
 import { stringify } from 'query-string';
 
-const apiUrl = 'http://127.0.0.1:4000/api/auth';
+const apiUrl = 'http://34.125.220.77:4000/api/auth';
 // const httpClient = fetchUtils.fetchJson;
 
 

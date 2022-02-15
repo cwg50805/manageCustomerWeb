@@ -4,9 +4,9 @@ export default {
     // called when the user attempts to log in
     login: async({ username, password }) => {
         await axios
-        .post(`http://127.0.0.1:4000/api/login`, { email: username, password:password })
+        .post(`http://34.125.220.77:4000/api/login`, { email: username, password:password })
         .then((res) => {
-            if (res.data["jwtToken"] != ""){
+            if (res.data["jwtToken"] !== ""){
                 localStorage.setItem('jwtToken', res.data["jwtToken"]);
             }
         })
